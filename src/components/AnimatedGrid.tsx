@@ -9,7 +9,10 @@ const GridWrapper = styled.div`
 const AnimatedGrid = () => {
   const lineAnimation = {
     hidden: { pathLength: 0 },
-    visible: { pathLength: 1, transition: { duration: 2, ease: "easeInOut" } },
+    visible: {
+      pathLength: 1,
+      transition: { duration: 1.2, ease: "easeInOut" },
+    },
   };
 
   return (
@@ -17,8 +20,8 @@ const AnimatedGrid = () => {
       <svg
         xmlns="http://www.w3.org/2000/svg"
         viewBox="0 0 400 400"
-        width="400"
-        height="400"
+        width="500"
+        height="500"
       >
         <defs>
           <linearGradient id="fade" x1="0" x2="0" y1="0" y2="1">
