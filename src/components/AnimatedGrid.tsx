@@ -5,6 +5,7 @@ import { useTheme } from "../hooks/useTheme";
 const GridWrapper = styled.div`
   position: absolute;
   right: 10rem;
+  z-index: -1;
 `;
 
 const Beam = styled(motion.line)`
