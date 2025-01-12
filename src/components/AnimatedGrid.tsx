@@ -4,12 +4,12 @@ import { useTheme } from "../hooks/useTheme";
 
 const GridWrapper = styled.div`
   position: absolute;
-  right: 10rem;
+  right: 20rem;
   z-index: -1;
 `;
 
 const Beam = styled(motion.line)`
-  filter: drop-shadow(0 5px 5px ${(props) => props.theme.primary});
+  filter: drop-shadow(0 2px 6px ${(props) => props.theme.primary});
 `;
 
 const AnimatedGrid = () => {
