@@ -6,27 +6,39 @@ const ThemeSelect = styled.div`
   outline: 0;
   max-width: 20rem;
   display: inline-flex;
-  transform: translateX(2rem);
+  gap: 2rem;
+
+  @media screen and (min-width: 1024px) {
+    transform: translateX(2rem);
+  }
 `;
 
 const ThemeLabel = styled.p`
-  transform: rotate(270deg);
   letter-spacing: 0.15rem;
   font-size: 1.2rem;
   text-transform: uppercase;
+
+  @media screen and (min-width: 1024px) {
+    transform: rotate(270deg);
+  }
 `;
 
 const ThemeColorWrapper = styled.div`
   display: flex;
-  flex-direction: column;
   gap: 1rem;
-  transform: translateX(-3rem);
+  align-items: center;
+
+  @media screen and (min-width: 1024px) {
+    flex-direction: column;
+    transform: translateX(-4rem);
+  }
 `;
 
 const themeColor = css`
   border-radius: 50%;
   width: 2rem;
   height: 2rem;
+  cursor: pointer;
 
   &.selected {
     outline: 1.5px solid #fff;
@@ -49,8 +61,6 @@ const PinkTheme = styled.div`
 
 const ThemeSelector = () => {
   const { theme, setTheme } = useTheme();
-
-  console.log(theme);
 
   return (
     <ThemeSelect>
