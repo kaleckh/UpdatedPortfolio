@@ -3,7 +3,7 @@ import AnimatedGrid from "./AnimatedGrid";
 import AnimatedText from "./AnimatedText";
 import FadeIn from "./FadeIn";
 import SocialLinks from "./SocialLinks";
-import { OutlineBtn, PrimaryBtn } from "../styles/shared-styles";
+import { OutlineBtn, primaryBtn, PrimaryBtn } from "../styles/shared-styles";
 import { IoMdDownload } from "react-icons/io";
 
 const HeroContainer = styled.div`
@@ -46,16 +46,18 @@ const AuthorHeading = styled.h1`
 const Highlight = styled.span`
   font-weight: 700;
   color: #fff;
-
-  &:hover {
-    text-decoration: underline;
-  }
 `;
 
 const HeroButtonWrapper = styled.div`
   display: flex;
   gap: 1rem;
   margin-top: 2rem;
+`;
+
+const ResumeBtn = styled.a`
+  ${primaryBtn}
+  text-decoration: none;
+  font-size: 1.3rem;
 `;
 
 const Hero = () => {
@@ -72,18 +74,20 @@ const Hero = () => {
           <AnimatedText text="John Smith" />
         </AuthorHeading>
         <FadeIn delay={0.8}>
-          {/* Your description - main tech skills/current focus  */}
+          {/* Your description - main tech skills/current focus or pursuit*/}
           <HeroSummary>
             With 3 years of experience, I specialize in
             <Highlight> React</Highlight>, <Highlight>TypeScript</Highlight>,
-            and <Highlight>Node.js</Highlight>. With a strong focus on OOP!
+            and <Highlight>Node.js</Highlight>. With a strong focus on
+            Object-Oriented-Programming (OOP).
           </HeroSummary>
           <HeroButtonWrapper>
             <OutlineBtn>View my work</OutlineBtn>
-            <PrimaryBtn>
+            {/* Optional Resume Button - For use, embed resume in 'Public folder' and change href and download attributes to your own file */}
+            <ResumeBtn href="/demo_resume.pdf" download="demo_resume.pdf">
               <IoMdDownload size={20} />
               Resume
-            </PrimaryBtn>
+            </ResumeBtn>
           </HeroButtonWrapper>
         </FadeIn>
       </ContentWrapper>
