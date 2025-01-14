@@ -59,7 +59,11 @@ const PinkTheme = styled.div`
   background-color: #F926AE;
 `;
 
-const ThemeSelector = () => {
+interface Props {
+  onSelectTheme?: () => void;
+}
+
+const ThemeSelector = ({ onSelectTheme }: Props) => {
   const { theme, setTheme } = useTheme();
 
   return (
@@ -68,15 +72,24 @@ const ThemeSelector = () => {
       <ThemeColorWrapper>
         <GreenTheme
           className={theme.primary === "#16F8B6" ? "selected" : ""}
-          onClick={() => setTheme(greenTheme)}
+          onClick={() => {
+            onSelectTheme?.();
+            setTheme(greenTheme);
+          }}
         />
         <PurpleTheme
           className={theme.primary === "#8244FF" ? "selected" : ""}
-          onClick={() => setTheme(purpleTheme)}
+          onClick={() => {
+            onSelectTheme?.();
+            setTheme(purpleTheme);
+          }}
         />
         <PinkTheme
           className={theme.primary === "#F926AE" ? "selected" : ""}
-          onClick={() => setTheme(pinkTheme)}
+          onClick={() => {
+            onSelectTheme?.();
+            setTheme(pinkTheme);
+          }}
         />
       </ThemeColorWrapper>
     </ThemeSelect>
