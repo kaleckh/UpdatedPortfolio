@@ -28,7 +28,8 @@ h1 {
         font-size: 4.5rem;
     }
     @media screen and (min-width: 768px) {
-        font-size: 6rem;
+        font-size: 8rem;
+        line-height: 10rem;
     }
 }
 
