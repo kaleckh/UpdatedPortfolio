@@ -8,6 +8,11 @@ const baseBtn = css`
   display: flex;
   gap: 0.5rem;
   align-items: center;
+  transition: 0.15s ease-in;
+
+  &:hover {
+    border-radius: 40px;
+  }
 `;
 
 const primaryBtn = css`
