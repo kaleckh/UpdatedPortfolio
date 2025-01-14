@@ -5,7 +5,7 @@ import ThemeSelector from "./ThemeSelector";
 const MenuContainer = styled.aside`
   min-height: 100vh;
   position: absolute;
-  background-color: #0a0a0a;
+  background-color: #000;
   flex-direction: column;
   gap: 6rem;
   align-items: center;
