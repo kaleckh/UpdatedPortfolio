@@ -5,11 +5,11 @@ import ThemeSelector from "./ThemeSelector";
 const MenuContainer = styled.aside`
   min-height: 100vh;
   position: absolute;
-  background-color: #0c0c15;
+  background-color: #0a0a0a;
   flex-direction: column;
   gap: 6rem;
   align-items: center;
-  border-right: 1px solid rgba(255, 255, 255, 0.3);
+  border-right: 1px solid rgba(255, 255, 255, 0.1);
   padding: 2rem 0;
   z-index: 7;
   position: fixed;
