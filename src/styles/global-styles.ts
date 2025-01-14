@@ -15,7 +15,7 @@ html {
 
 body {
     font-family: 'Poppins', sans-serif;
-    background-color: #000;
+    background-color: #0a0a0a
 }
 
 /* Typography */
@@ -23,12 +23,13 @@ body {
 h1 {
     font-size: 3.5rem;
     color:#fff;
+    font-weight: 800;
 
     @media screen and (min-width: 480px) {
         font-size: 4.5rem;
     }
     @media screen and (min-width: 768px) {
-        font-size: 8rem;
+        font-size: 7.5rem;
         line-height: 10rem;
     }
 }
