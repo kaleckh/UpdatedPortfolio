@@ -26,10 +26,24 @@ h1 {
     font-weight: 800;
 
     @media screen and (min-width: 480px) {
-        font-size: 4.5rem;
+        font-size: 5rem;
     }
     @media screen and (min-width: 768px) {
-        font-size: 7.5rem;
+        font-size: 8rem;
+    }
+}
+
+h2 {
+    font-weight: 800;
+    color: #fff;
+    font-size: 3rem;
+
+    
+    @media screen and (min-width: 480px) {
+        font-size: 4rem;
+    }
+    @media screen and (min-width: 768px) {
+        font-size: 5.5rem;
         line-height: 10rem;
     }
 }
