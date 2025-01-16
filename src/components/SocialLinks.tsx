@@ -3,7 +3,11 @@ import { FaLinkedinIn } from "react-icons/fa6";
 import { TbBrandGithubFilled } from "react-icons/tb";
 import { FaXTwitter } from "react-icons/fa6";
 import { TbMailFilled } from "react-icons/tb";
-import FadeIn from "./FadeIn";
+
+const SocialContainer = styled.div`
+  display: flex;
+  gap: 1rem;
+`;
 
 const socialIcons = css`
   fill: #fff;
@@ -31,12 +35,12 @@ const EmailIcon = styled(TbMailFilled)`
 
 const SocialLinks = () => {
   return (
-    <>
+    <SocialContainer>
       <LinkedInIcon size={25} color="aaa" />
       <GithubIcon size={25} color="aaa" />
       <XIcon size={25} color="aaa" />
       <EmailIcon size={25} color="aaa" />
-    </>
+    </SocialContainer>
   );
 };
 
