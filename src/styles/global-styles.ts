@@ -15,7 +15,7 @@ html {
 
 body {
     font-family: 'Poppins', sans-serif;
-    background-color: #0a0a0a
+    background-color: #16161a
 }
 
 /* Typography */
