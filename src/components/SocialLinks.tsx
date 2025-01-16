@@ -5,14 +5,6 @@ import { FaXTwitter } from "react-icons/fa6";
 import { TbMailFilled } from "react-icons/tb";
 import FadeIn from "./FadeIn";
 
-const SocialIconsWrapper = styled.div`
-  display: flex;
-  gap: 1rem;
-  position: absolute;
-  top: 5rem;
-  right: 2.4rem;
-`;
-
 const socialIcons = css`
   fill: #fff;
   font-size: 2.5rem;
@@ -39,14 +31,12 @@ const EmailIcon = styled(TbMailFilled)`
 
 const SocialLinks = () => {
   return (
-    <FadeIn>
-      <SocialIconsWrapper>
-        <LinkedInIcon size={25} color="aaa" />
-        <GithubIcon size={25} color="aaa" />
-        <XIcon size={25} color="aaa" />
-        <EmailIcon size={25} color="aaa" />
-      </SocialIconsWrapper>
-    </FadeIn>
+    <>
+      <LinkedInIcon size={25} color="aaa" />
+      <GithubIcon size={25} color="aaa" />
+      <XIcon size={25} color="aaa" />
+      <EmailIcon size={25} color="aaa" />
+    </>
   );
 };
 

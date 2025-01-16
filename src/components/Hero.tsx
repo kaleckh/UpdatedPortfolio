@@ -1,10 +1,10 @@
+import { IoMdDownload } from "react-icons/io";
 import styled from "styled-components";
+import { OutlineBtn, primaryBtn } from "../styles/shared-styles";
 import AnimatedGrid from "./AnimatedGrid";
 import AnimatedText from "./AnimatedText";
 import FadeIn from "./FadeIn";
 import SocialLinks from "./SocialLinks";
-import { OutlineBtn, primaryBtn, PrimaryBtn } from "../styles/shared-styles";
-import { IoMdDownload } from "react-icons/io";
 
 const HeroContainer = styled.div`
   position: relative;
@@ -19,12 +19,16 @@ const HeroContainer = styled.div`
   }
 `;
 
-const Overline = styled.h2`
-  font-size: 2.2rem;
+const Overline = styled.p`
   font-weight: 300;
   text-transform: uppercase;
   letter-spacing: 0.2rem;
   color: #fff;
+  font-size: 2.2rem;
+
+  @media screen and (min-width: 786px) {
+    font-size: 2.5rem;
+  }
 `;
 
 const HeroSummary = styled.p`
@@ -45,7 +49,7 @@ const AuthorHeading = styled.h1`
 
 const Highlight = styled.span`
   font-weight: 700;
-  color: #fff;
+  color: ${(props) => props.theme.primary};
 `;
 
 const HeroButtonWrapper = styled.div`
@@ -57,13 +61,25 @@ const HeroButtonWrapper = styled.div`
 const ResumeBtn = styled.a`
   ${primaryBtn}
   text-decoration: none;
-  font-size: 1.3rem;
+  font-size: 1.6rem;
+`;
+
+const SocialIconsWrapper = styled.div`
+  display: flex;
+  gap: 1rem;
+  position: absolute;
+  top: 5rem;
+  right: 2.4rem;
 `;
 
 const Hero = () => {
   return (
     <HeroContainer>
-      <SocialLinks />
+      <FadeIn>
+        <SocialIconsWrapper>
+          <SocialLinks />
+        </SocialIconsWrapper>
+      </FadeIn>
       <ContentWrapper>
         <FadeIn delay={0.5}>
           {/* Your Title  */}
