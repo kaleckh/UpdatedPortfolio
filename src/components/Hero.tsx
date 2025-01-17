@@ -1,10 +1,10 @@
 import { IoMdDownload } from "react-icons/io";
 import styled from "styled-components";
 import { OutlineBtn, primaryBtn } from "../styles/shared-styles";
-import AnimatedGrid from "./AnimatedGrid";
-import AnimatedText from "./AnimatedText";
-import FadeIn from "./FadeIn";
+import AnimatedText from "./animations/AnimatedText";
+import FadeIn from "./animations/FadeIn";
 import SocialLinks from "./SocialLinks";
+import AnimatedGrid from "./animations/AnimatedGrid";
 
 const HeroContainer = styled.div`
   position: relative;
@@ -65,8 +65,6 @@ const ResumeBtn = styled.a`
 `;
 
 const SocialIconsWrapper = styled.div`
-  display: flex;
-  gap: 1rem;
   position: absolute;
   top: 5rem;
   right: 2.4rem;

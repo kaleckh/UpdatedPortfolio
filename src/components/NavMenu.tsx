@@ -2,7 +2,7 @@ import { useState } from "react";
 import { IoIosClose } from "react-icons/io";
 import { RiMenu2Fill } from "react-icons/ri";
 import styled from "styled-components";
-import FadeIn from "./FadeIn";
+import FadeIn from "./animations/FadeIn";
 import ThemeSelector from "./ThemeSelector";
 
 const MenuContainer = styled.nav`

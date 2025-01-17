@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import FadeIn from "./FadeIn";
+import FadeIn from "./animations/FadeIn";
 import ThemeSelector from "./ThemeSelector";
 
 const MenuContainer = styled.aside`
