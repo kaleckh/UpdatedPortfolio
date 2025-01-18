@@ -8,6 +8,11 @@ const SkillContainer = styled.div`
   flex-wrap: wrap;
   align-self: self-start;
   gap: 0.8rem;
+  margin-top: 4rem;
+
+  @media screen and (min-width: 768px) {
+    margin: 0;
+  }
 `;
 
 const SkillHeading = styled.h3`
@@ -21,10 +26,10 @@ const SkillHeading = styled.h3`
 
 const CodeIcon = styled(IoCodeSharp)`
   background-color: ${(props) => props.theme.primary};
-  padding: 0.5rem;
+  padding: 0.4rem;
   box-sizing: content-box;
   fill: #000;
-  font-size: 1.8rem;
+  font-size: 1.6rem;
   border-radius: 50%;
 `;
 
