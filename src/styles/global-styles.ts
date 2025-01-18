@@ -24,12 +24,14 @@ h1 {
     font-size: 3.5rem;
     color:#fff;
     font-weight: 800;
+    margin: 1rem 0;
 
     @media screen and (min-width: 480px) {
         font-size: 5rem;
     }
     @media screen and (min-width: 768px) {
         font-size: 8rem;
+
     }
 }
 
@@ -49,7 +51,7 @@ h2 {
 }
 
 p {
-    font-size: 1.6rem;
+    font-size: 1.7rem;
     line-height: 3rem;
     color: #C6CADF;
 }
