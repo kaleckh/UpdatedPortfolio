@@ -21,10 +21,10 @@ const SkillHeading = styled.h3`
 
 const CodeIcon = styled(IoCodeSharp)`
   background-color: ${(props) => props.theme.primary};
-  padding: 0.6rem;
+  padding: 0.5rem;
   box-sizing: content-box;
   fill: #000;
-  font-size: 2rem;
+  font-size: 1.8rem;
   border-radius: 50%;
 `;
 
