@@ -24,19 +24,18 @@ const MenuContainer = styled.aside`
 
 const MenuList = styled.ul`
   list-style: none;
-  gap: 1rem;
   align-items: center;
   flex-direction: column;
   transform: translateY(3rem);
-  gap: 5rem;
+  gap: 6rem;
   display: flex;
 `;
 
 const MenuItem = styled.li`
-  font-size: 3rem;
   cursor: pointer;
   transform: rotate(270deg);
-  font-size: 1.7rem;
+  font-size: 2rem;
+  font-weight: 700;
 
   & > a {
     color: #fff;
@@ -55,13 +54,17 @@ const SideMenu = () => {
         <FadeIn>
           <MenuList>
             <MenuItem>
-              <a href="">Projects</a>
+              <a href="">Contact</a>
             </MenuItem>
             <MenuItem>
               <a href="">Skills</a>
             </MenuItem>
             <MenuItem>
-              <a href="">Contact</a>
+              <a href="">Projects</a>
+            </MenuItem>
+
+            <MenuItem>
+              <a href="">About</a>
             </MenuItem>
           </MenuList>
         </FadeIn>
