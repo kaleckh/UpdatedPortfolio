@@ -11,7 +11,7 @@ const SocialContainer = styled.div`
 
 const socialIcons = css`
   fill: #fff;
-  font-size: 2.5rem;
+  font-size: 2.2rem;
   transition: all 0.15s;
   cursor: pointer;
 
@@ -36,10 +36,10 @@ const EmailIcon = styled(TbMailFilled)`
 const SocialLinks = () => {
   return (
     <SocialContainer>
-      <LinkedInIcon size={25} color="aaa" />
-      <GithubIcon size={25} color="aaa" />
-      <XIcon size={25} color="aaa" />
-      <EmailIcon size={25} color="aaa" />
+      <LinkedInIcon />
+      <GithubIcon />
+      <XIcon />
+      <EmailIcon />
     </SocialContainer>
   );
 };
