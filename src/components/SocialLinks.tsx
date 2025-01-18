@@ -6,7 +6,7 @@ import { TbMailFilled } from "react-icons/tb";
 
 const SocialContainer = styled.div`
   display: flex;
-  gap: 1rem;
+  gap: 1.5rem;
 `;
 
 const socialIcons = css`
