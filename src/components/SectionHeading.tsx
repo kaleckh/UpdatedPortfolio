@@ -12,9 +12,10 @@ const HeadingContainer = styled.div`
   gap: 2rem;
 `;
 
-const HeadingWrapper = styled.div`
+const HeadingWrapper = styled.div<{ headingOrder?: number }>`
   display: flex;
   align-items: center;
+  order: ${(props) => props.headingOrder};
 `;
 
 const BulletWrapper = styled.div`
@@ -44,10 +45,15 @@ const animationVariants = {
   },
 };
 
-const SectionHeading = ({ heading }: Props) => {
+interface Props {
+  headingOrder?: number;
+  heading: string;
+}
+
+const SectionHeading = ({ headingOrder, heading }: Props) => {
   return (
     <HeadingContainer>
-      <HeadingWrapper>
+      <HeadingWrapper headingOrder={headingOrder}>
         <h2>
           <AnimatedText text={heading}></AnimatedText>
           <BulletWrapper>
