@@ -26,7 +26,7 @@ const SocialWrapper = styled.div`
 
 const AboutWrapper = styled.div`
   display: flex;
-  gap: 2rem;
+  gap: 5rem;
   flex-direction: column;
 
   @media screen and (min-width: 768px) {
@@ -36,7 +36,7 @@ const AboutWrapper = styled.div`
 
 const About = styled.div`
   @media screen and (min-width: 768px) {
-    max-width: 50rem;
+    max-width: 55rem;
   }
 `;
 
