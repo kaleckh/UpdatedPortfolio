@@ -46,7 +46,6 @@ h2 {
     }
     @media screen and (min-width: 768px) {
         font-size: 5.5rem;
-        line-height: 10rem;
     }
 }
 
