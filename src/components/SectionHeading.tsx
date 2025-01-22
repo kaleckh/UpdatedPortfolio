@@ -10,6 +10,7 @@ const HeadingContainer = styled.div`
   display: flex;
   align-items: center;
   gap: 2rem;
+  margin-bottom: 1.5rem;
 `;
 
 const HeadingWrapper = styled.div<{ headingOrder?: number }>`
