@@ -11,9 +11,9 @@ const ProjectContainer = styled.section`
   margin-top: 5rem;
 `;
 
-const Wrapper = styled.div`
+const ProjectWrapper = styled.div`
   display: flex;
-  gap: 2rem;
+  gap: 4rem 2rem;
   flex-wrap: wrap;
 `;
 
@@ -42,8 +42,6 @@ const ExpandIcon = styled(LuChevronsDown)`
   }
 `;
 
-// const truncatedProjectData = projectData.
-
 const ProjectSection = () => {
   const [isExpanded, setIsExpanded] = useState(false);
 
@@ -58,11 +56,11 @@ const ProjectSection = () => {
   return (
     <ProjectContainer>
       <SectionHeading heading="Projects" headingOrder={1} />
-      <Wrapper>
+      <ProjectWrapper>
         {truncatedProjectData.map((project, index) => (
           <ProjectCard key={index} {...project} />
         ))}
-      </Wrapper>
+      </ProjectWrapper>
       <ToggleProjectButton onClick={handleShowAllProjects}>
         {isExpanded ? "Show Less" : "Show More"}
         <ExpandIcon className={isExpanded ? "rotate" : ""} />
