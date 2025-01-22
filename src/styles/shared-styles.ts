@@ -6,7 +6,7 @@ export const container = css`
   padding: 0 2.4rem;
 
   @media screen and (min-width: 1150px) {
-    max-width: 95rem;
+    max-width: 100rem;
   }
 `;
 
