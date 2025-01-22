@@ -1,16 +1,17 @@
-import styled, { css } from "styled-components";
-import projectImg from "../../images/designo.png";
+import { useState } from "react";
+import { BsArrowRight } from "react-icons/bs";
 import { DiGithubBadge } from "react-icons/di";
 import { GoLinkExternal } from "react-icons/go";
-import { BsArrowRight } from "react-icons/bs";
+import styled from "styled-components";
 import { Project } from "../../data/projectData";
-import { useState } from "react";
 import ProjectCardModal from "./ProjectCardModal";
+import FadeUp from "../animations/FadeUp";
 
 const Card = styled.article`
   display: flex;
   flex-direction: column;
   max-width: 45rem;
+  width: 100%;
 `;
 
 const CardImageWrapper = styled.div`
@@ -56,7 +57,12 @@ const TechLabels = styled.p`
   color: ${(props) => props.theme.primary};
   font-size: 1.5rem;
 `;
-const IconWrapper = styled.div`
+
+const Bullet = styled.span`
+  color: ${(props) => props.theme.primary};
+`;
+
+const IconWrapper = styled.a`
   display: flex;
   align-items: center;
   justify-content: center;
@@ -79,6 +85,7 @@ const LearnMoreButton = styled.button`
   align-items: center;
   gap: 0.2rem;
   transition: 0.15s ease-in;
+  cursor: pointer;
 
   &:hover {
     gap: 0.5rem;
@@ -103,34 +110,37 @@ const ProjectCard = ({ ...project }: Project) => {
       {isModalOpen && (
         <ProjectCardModal {...project} onCloseModal={handleCloseModal} />
       )}
-      <Card>
-        <CardImageWrapper>
-          <CardImage src={project.image} />
-        </CardImageWrapper>
-        <CardDetails>
-          <HeadingWrapper>
-            <CardHeading>{project.title}</CardHeading>
-            <Separator />
-            <IconWrapper>
-              <DiGithubBadge color="#eee" size={32} />
-            </IconWrapper>
-            <IconWrapper>
-              <GoLinkExternal color="#eee" size={24} />
-            </IconWrapper>
-          </HeadingWrapper>
-          <TechWrapper>
-            {project.techUsed.map((tech, index) => (
-              <TechLabels key={index}>{tech}</TechLabels>
-            ))}
-          </TechWrapper>
-          <p>
-            {`${project.description.substring(0, 115)}...`}
-            <LearnMoreButton onClick={handleOpenModal}>
-              Learn More <BsArrowRight />
-            </LearnMoreButton>
-          </p>
-        </CardDetails>
-      </Card>
+      <FadeUp>
+        <Card>
+          <CardImageWrapper>
+            <CardImage src={project.image} />
+          </CardImageWrapper>
+          <CardDetails>
+            <HeadingWrapper>
+              <CardHeading>
+                {project.title}
+                <Bullet>.</Bullet>
+              </CardHeading>
+              <Separator />
+              <IconWrapper target="_blank" href={project.githubPath}>
+                <DiGithubBadge color="#eee" size={32} />
+              </IconWrapper>
+              <IconWrapper target="_blank" href={project.liveSitePath}>
+                <GoLinkExternal color="#eee" size={24} />
+              </IconWrapper>
+            </HeadingWrapper>
+            <TechWrapper>
+              <TechLabels>{project.techUsed.join(" | ")}</TechLabels>
+            </TechWrapper>
+            <p>
+              {`${project.description.substring(0, 115)}...`}
+              <LearnMoreButton onClick={handleOpenModal}>
+                Learn More <BsArrowRight />
+              </LearnMoreButton>
+            </p>
+          </CardDetails>
+        </Card>
+      </FadeUp>
     </>
   );
 };

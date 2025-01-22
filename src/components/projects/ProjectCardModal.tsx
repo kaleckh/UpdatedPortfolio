@@ -94,11 +94,11 @@ const ProjectCardModal = ({ ...props }: Props) => {
           </TechWrapper>
           <p>{props.description}</p>
           <LinkWrapper>
-            <Link>
+            <Link target="_blank" href={props.githubPath}>
               <DiGithubBadge size={20} />
               Source Code
             </Link>
-            <Link>
+            <Link target="_blank" href={props.liveSitePath}>
               <GoLinkExternal />
               Live Site
             </Link>
