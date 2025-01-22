@@ -1,4 +1,6 @@
+// Import your project photos here
 import designoProject from "../images/designo.png";
+import audiophileProject from "../images/audiophile1.webp";
 
 export interface Project {
   title: string;
@@ -11,12 +13,57 @@ export interface Project {
 
 export const projectData: Project[] = [
   {
+    title: "Designo",
+    description:
+      "A responsive multi-page web application where I leveraged SSR in Next Js to enhance performance. Integrated Google maps API for better location display.",
+    techUsed: ["TypeScript", "Next.js", "Tailwind"],
+    githubPath: "https://github.com",
+    liveSitePath: "/",
+    image: designoProject,
+  },
+  {
+    title: "Designo",
+    description:
+      "A responsive multi-page web application where I leveraged SSR in Next Js to enhance performance. Integrated Google maps API for better location display.",
+    techUsed: ["TypeScript", "Next.js", "Tailwind"],
+    githubPath: "https://github.com",
+    liveSitePath: "/",
+    image: designoProject,
+  },
+  {
     title: "Audiophile",
     description:
-      "This project is so awesome I am so proud of myself for completing the challenge from frontend mentor and it was pretty easy",
-    techUsed: ["JavaScript", "React", "Tailwind"],
+      "A responsive multi-page web application where I leveraged SSR in Next Js to enhance performance. Integrated Google maps API for better location display.",
+    techUsed: ["TypeScript", "Next.js", "Tailwind"],
     githubPath: "https://github.com",
-    liveSitePath: "https://justinalexanderv2.vercel.app",
+    liveSitePath: "/",
+    image: audiophileProject,
+  },
+  {
+    title: "Audiophile",
+    description:
+      "A responsive multi-page web application where I leveraged SSR in Next Js to enhance performance. Integrated Google maps API for better location display.",
+    techUsed: ["TypeScript", "Next.js", "Tailwind"],
+    githubPath: "https://github.com",
+    liveSitePath: "/",
+    image: audiophileProject,
+  },
+  {
+    title: "Designo",
+    description:
+      "A responsive multi-page web application where I leveraged SSR in Next Js to enhance performance. Integrated Google maps API for better location display.",
+    techUsed: ["TypeScript", "Next.js", "Tailwind"],
+    githubPath: "https://github.com",
+    liveSitePath: "/",
+    image: designoProject,
+  },
+  {
+    title: "Designo",
+    description:
+      "A responsive multi-page web application where I leveraged SSR in Next Js to enhance performance. Integrated Google maps API for better location display.",
+    techUsed: ["TypeScript", "Next.js", "Tailwind"],
+    githubPath: "https://github.com",
+    liveSitePath: "/",
     image: designoProject,
   },
 ];
