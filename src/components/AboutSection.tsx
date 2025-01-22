@@ -36,7 +36,7 @@ const AboutWrapper = styled.div`
 
 const About = styled.div`
   @media screen and (min-width: 768px) {
-    max-width: 55rem;
+    max-width: 60rem;
   }
 `;
 
