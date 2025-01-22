@@ -12,6 +12,10 @@ const defaultAnimation = {
     y: 0,
     filter: "blur(0px)",
   },
+  exit: {
+    opacity: 0,
+    scale: 0,
+  },
 };
 
 const FadeUp = ({ children }: { children: ReactNode }) => {
@@ -22,6 +26,7 @@ const FadeUp = ({ children }: { children: ReactNode }) => {
       initial="hidden"
       viewport={{ once: true }}
       whileInView={"visible"}
+      exit={"exit"}
       transition={{
         duration: 0.35,
         ease: easeIn,
