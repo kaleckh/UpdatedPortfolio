@@ -20,6 +20,7 @@ const FadeUp = ({ children }: { children: ReactNode }) => {
       variants={defaultAnimation}
       animate={"hidden"}
       initial="hidden"
+      viewport={{ once: true }}
       whileInView={"visible"}
       transition={{
         duration: 0.35,
