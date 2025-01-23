@@ -1,50 +1,87 @@
-# React + TypeScript + Vite
+# Developer Portfolio Template
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This project is a React-based developer portfolio template created using Vite. It is designed to help new developers showcase their projects, skills, and contact information with ease. Follow the instructions below to set up and customize the portfolio to fit your needs.
 
-Currently, two official plugins are available:
+## Getting Started
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+### Prerequisites
 
-## Expanding the ESLint configuration
+- Node.js installed on your computer.
+- Basic understanding of React and JavaScript.
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+### Installation
 
-- Configure the top-level `parserOptions` property like this:
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/your-repo/portfolio-template.git
+   ```
+2. Navigate to the project directory:
+   ```bash
+   cd portfolio-template
+   ```
+3. Install dependencies:
+   ```bash
+   npm install
+   ```
+4. Run the development server:
+   ```bash
+   npm run dev
+   ```
+5. Open the app in your browser at `http://localhost:5173`.
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ["./tsconfig.node.json", "./tsconfig.app.json"],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-});
-```
+## Customization
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+### Personal Information
 
-```js
-// eslint.config.js
-import react from "eslint-plugin-react";
+1. Open the `src/components/Hero.tsx` file.
+2. Update the following information:
+   - **Title**: Your portfolio's headline.
+   - **Name**: Your name.
+   - **Skill Summary**: A brief summary of your skills.
+   - **Resume**: Embed your resume within the `public` folder and link to it here.
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: "18.3" } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs["jsx-runtime"].rules,
-  },
-});
-```
+### Social Links
+
+1. Open the `src/components/SocialLinks.tsx` file.
+2. Update the social media and contact links by replacing the placeholder URLs with your own for platforms such as LinkedIn, GitHub, X (formerly Twitter), and Email.
+
+### Projects
+
+1. Open the `src/data/projectData.tsx` file.
+2. Update the `projectData` array with your own project details:
+   ```typescript
+   export const projectData: Project[] = [
+     {
+       title: "Designo",
+       description:
+         "A responsive multi-page web application where I leveraged SSR in Next Js to enhance performance. Integrated Google maps API for better location display.",
+       techUsed: ["TypeScript", "Next.js", "Tailwind"],
+       githubPath: "https://github.com",
+       liveSitePath: "/",
+       image: designoProject,
+     },
+     // Add more project
+   ];
+   ```
+
+### Technical Skills
+
+1. Open the `src/data/techSkills.tsx` file.
+2. Update the `techSkills` array with the technologies you are proficient in:
+   ```typescript
+   export const techSkills = [
+     "React",
+     "TypeScript",
+     "Node.js",
+     "Next.js",
+     "Express.js",
+     "MongoDb",
+   ];
+   ```
+
+### Contact Section
+
+1. Open the `src/components/ContactSection.tsx` file.
+2. Replace the placeholder email with your actual email address to update the contact link.
+
+Feel free to reach out if you encounter any issues or need assistance!
