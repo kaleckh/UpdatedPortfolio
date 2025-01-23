@@ -65,10 +65,12 @@ const ProjectSection = () => {
           <ProjectCard key={index} {...project} />
         ))}
       </ProjectWrapper>
-      <ToggleProjectButton onClick={handleShowAllProjects}>
-        {isExpanded ? "Show Less" : "Show More"}
-        <ExpandIcon className={isExpanded ? "rotate" : ""} />
-      </ToggleProjectButton>
+      {projectData.length > 4 && (
+        <ToggleProjectButton onClick={handleShowAllProjects}>
+          {isExpanded ? "Show Less" : "Show More"}
+          <ExpandIcon className={isExpanded ? "rotate" : ""} />
+        </ToggleProjectButton>
+      )}
     </ProjectContainer>
   );
 };
