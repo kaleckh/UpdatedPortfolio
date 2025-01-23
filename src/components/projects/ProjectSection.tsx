@@ -22,7 +22,7 @@ const ProjectWrapper = styled.div`
 `;
 
 const ToggleProjectButton = styled.button`
-  margin: 5rem auto;
+  margin: 5rem 0 0 auto;
   font-size: 1.8rem;
   border: 0;
   outline: 0;
