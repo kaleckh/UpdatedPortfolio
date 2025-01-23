@@ -52,11 +52,11 @@ const GreenTheme = styled.div`
 `;
 const PurpleTheme = styled.div`
   ${themeColor}
-  background-color: #8244FF;
+  background-color: #6060FC;
 `;
 const PinkTheme = styled.div`
   ${themeColor}
-  background-color: #F926AE;
+  background-color: #FF4FC1;
 `;
 
 interface Props {
@@ -78,14 +78,14 @@ const ThemeSelector = ({ onSelectTheme }: Props) => {
           }}
         />
         <PurpleTheme
-          className={theme.primary === "#8244FF" ? "selected" : ""}
+          className={theme.primary === "#6060FC" ? "selected" : ""}
           onClick={() => {
             onSelectTheme?.();
             setTheme(purpleTheme);
           }}
         />
         <PinkTheme
-          className={theme.primary === "#F926AE" ? "selected" : ""}
+          className={theme.primary === "#FF4FC1" ? "selected" : ""}
           onClick={() => {
             onSelectTheme?.();
             setTheme(pinkTheme);

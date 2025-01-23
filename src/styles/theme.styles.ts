@@ -1,8 +1,8 @@
 export const pinkTheme = {
-  primary: "#F926AE",
+  primary: "#FF4FC1",
 };
 export const purpleTheme = {
-  primary: "#8244FF",
+  primary: "#6060FC",
 };
 export const greenTheme = {
   primary: "#16F8B6",
