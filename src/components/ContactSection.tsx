@@ -59,7 +59,7 @@ const EmailBadge = styled.a`
 const ContactSection = () => {
   return (
     <FadeUp>
-      <ContactContainer>
+      <ContactContainer id="contact">
         <ContactBadge>Lets Connect</ContactBadge>
         <ContactHeading>
           Contact<Bullet>.</Bullet>

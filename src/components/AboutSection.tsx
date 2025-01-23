@@ -45,7 +45,7 @@ const About = styled.div`
 
 const AboutSection = () => {
   return (
-    <AboutContainer>
+    <AboutContainer id="about">
       <SectionHeading heading="About" />
       <FadeUp>
         <AboutWrapper>

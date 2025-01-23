@@ -78,13 +78,16 @@ const NavMenu = () => {
           <FadeIn>
             <NavList>
               <NavItem>
-                <a href="">Projects</a>
+                <a href="#projects">Projects</a>
               </NavItem>
               <NavItem>
-                <a href="">Skills</a>
+                <a href="#about">About</a>
               </NavItem>
               <NavItem>
-                <a href="">Contact</a>
+                <a href="#about">Skills</a>
+              </NavItem>
+              <NavItem>
+                <a href="#contact">Contact</a>
               </NavItem>
             </NavList>
           </FadeIn>

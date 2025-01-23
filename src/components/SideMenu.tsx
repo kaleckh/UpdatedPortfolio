@@ -35,7 +35,7 @@ const MenuItem = styled.li`
   cursor: pointer;
   transform: rotate(270deg);
   font-size: 2rem;
-  font-weight: 700;
+  font-weight: 500;
 
   & > a {
     color: #fff;
@@ -54,17 +54,17 @@ const SideMenu = () => {
         <FadeIn>
           <MenuList>
             <MenuItem>
-              <a href="">Contact</a>
+              <a href="#contact">Contact</a>
             </MenuItem>
             <MenuItem>
-              <a href="">Skills</a>
+              <a href="#about">Skills</a>
             </MenuItem>
             <MenuItem>
-              <a href="">Projects</a>
+              <a href="#projects">Projects</a>
             </MenuItem>
 
             <MenuItem>
-              <a href="">About</a>
+              <a href="#about">About</a>
             </MenuItem>
           </MenuList>
         </FadeIn>

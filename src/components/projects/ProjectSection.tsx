@@ -58,7 +58,7 @@ const ProjectSection = () => {
   };
 
   return (
-    <ProjectContainer>
+    <ProjectContainer id="projects">
       <SectionHeading heading="Projects" headingOrder={1} />
       <ProjectWrapper>
         {truncatedProjectData.map((project, index) => (

@@ -1,6 +1,6 @@
 import { IoMdDownload } from "react-icons/io";
 import styled from "styled-components";
-import { OutlineBtn, primaryBtn } from "../styles/shared-styles";
+import { outlineBtn, OutlineBtn, primaryBtn } from "../styles/shared-styles";
 import AnimatedText from "./animations/AnimatedText";
 import FadeIn from "./animations/FadeIn";
 import SocialLinks from "./SocialLinks";
@@ -71,6 +71,12 @@ const SocialIconsWrapper = styled.div`
   right: 2.4rem;
 `;
 
+const CTAButtonWrapper = styled.a`
+  ${outlineBtn}
+  text-decoration: none;
+  display: block;
+`;
+
 const Hero = () => {
   return (
     <HeroContainer>
@@ -90,6 +96,7 @@ const Hero = () => {
         </AuthorHeading>
         <FadeIn delay={0.8}>
           {/* Your description - main tech skills/current focus or pursuit*/}
+          {/* Wrap any tech/skills with the 'Highlight' component  */}
           <HeroSummary>
             With 3 years of experience, I specialize in
             <Highlight> React</Highlight>, <Highlight>TypeScript</Highlight>,
@@ -97,7 +104,7 @@ const Hero = () => {
             Object-Oriented-Programming (OOP).
           </HeroSummary>
           <HeroButtonWrapper>
-            <OutlineBtn>View my work</OutlineBtn>
+            <CTAButtonWrapper href="#projects">View my work</CTAButtonWrapper>
             {/* Optional Resume Button - For use, embed resume in 'Public folder' and change href and download attributes to your own file */}
             <ResumeBtn href="/demo_resume.pdf" download="demo_resume.pdf">
               <IoMdDownload size={20} />
