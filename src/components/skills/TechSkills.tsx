@@ -8,20 +8,25 @@ const SkillContainer = styled.div`
   flex-wrap: wrap;
   align-self: self-start;
   gap: 0.8rem;
-  margin-top: 4rem;
+  margin-bottom: 2rem;
 
   @media screen and (min-width: 768px) {
     margin: 0;
+    order: 2;
   }
 `;
 
 const SkillHeading = styled.h3`
   color: #fff;
-  font-size: 2.2rem;
+  font-size: 1.9rem;
   width: 100%;
   display: flex;
   gap: 1rem;
   align-items: center;
+
+  @media screen and (min-width: 768px) {
+    font-size: 2.2rem;
+  }
 `;
 
 const CodeIcon = styled(IoCodeSharp)`

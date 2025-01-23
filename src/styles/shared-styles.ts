@@ -13,12 +13,16 @@ export const container = css`
 const baseBtn = css`
   outline: 0;
   border-radius: 5px;
-  padding: 1.3rem 2.5rem;
+  padding: 1.3rem;
   display: flex;
   font-size: 1.6rem;
   gap: 0.5rem;
   align-items: center;
   transition: 0.15s ease-in;
+
+  @media screen and (min-width: 480px) {
+    padding: 1rem 2.2rem;
+  }
 
   &:hover {
     border-radius: 40px;

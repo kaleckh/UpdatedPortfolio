@@ -26,15 +26,18 @@ const SocialWrapper = styled.div`
 
 const AboutWrapper = styled.div`
   display: flex;
-  gap: 5rem;
   flex-direction: column;
+  gap: 2rem;
 
   @media screen and (min-width: 768px) {
     flex-direction: row;
+    gap: 5rem;
   }
 `;
 
 const About = styled.div`
+  order: 1;
+
   @media screen and (min-width: 768px) {
     max-width: 60rem;
   }
@@ -44,9 +47,9 @@ const AboutSection = () => {
   return (
     <AboutContainer>
       <SectionHeading heading="About" />
-      <AboutWrapper>
-        <About>
-          <FadeUp>
+      <FadeUp>
+        <AboutWrapper>
+          <About>
             <p>
               <IntroHighlight>Here is my story. </IntroHighlight>My journey into
               coding started with curiosity and grew into a love for solving
@@ -54,35 +57,33 @@ const AboutSection = () => {
               responsive frontends or building scalable backends, I thrive on
               turning ideas into reality.
             </p>
-          </FadeUp>
-          <br />
-          <FadeUp>
-            <p>
-              By day, I’m focused on delivering impactful code and collaborating
-              with talented teams. By night, I love diving into personal
-              projects or experimenting with new tools and frameworks to stay
-              ahead of the curve.
-            </p>
-          </FadeUp>
-          <br />
-          <FadeUp>
-            <p>
-              When I’m not coding, you’ll find me gaming away or looking for my
-              next read. I’m always open to new opportunities, exciting
-              challenges, or simply connecting with like-minded developers.
-              Let’s build something amazing together!
-            </p>
-          </FadeUp>
-          <FadeUp>
-            <SocialWrapper>
-              <SocialLinks />
-            </SocialWrapper>
-          </FadeUp>
-        </About>
-        <FadeUp>
+            <br />
+            <FadeUp>
+              <p>
+                By day, I’m focused on delivering impactful code and
+                collaborating with talented teams. By night, I love diving into
+                personal projects or experimenting with new tools and frameworks
+                to stay ahead of the curve.
+              </p>
+            </FadeUp>
+            <br />
+            <FadeUp>
+              <p>
+                When I’m not coding, you’ll find me gaming away or looking for
+                my next read. I’m always open to new opportunities, exciting
+                challenges, or simply connecting with like-minded developers.
+                Let’s build something amazing together!
+              </p>
+            </FadeUp>
+            <FadeUp>
+              <SocialWrapper>
+                <SocialLinks />
+              </SocialWrapper>
+            </FadeUp>
+          </About>
           <TechSkills />
-        </FadeUp>
-      </AboutWrapper>
+        </AboutWrapper>
+      </FadeUp>
     </AboutContainer>
   );
 };

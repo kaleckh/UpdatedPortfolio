@@ -10,12 +10,13 @@ const HeroContainer = styled.div`
   position: relative;
   display: flex;
   align-items: center;
+  min-height: 90vh;
   padding: 0 2.4rem;
-  min-height: 100vh;
   max-width: 120rem;
   margin: 0 auto;
 
-  @media screen {
+  @media screen and (min-width: 768px) {
+    min-height: 100vh;
   }
 `;
 

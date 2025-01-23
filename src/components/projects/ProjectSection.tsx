@@ -12,9 +12,13 @@ const ProjectContainer = styled.section`
 `;
 
 const ProjectWrapper = styled.div`
-  display: flex;
+  display: grid;
   gap: 4rem 2rem;
-  flex-wrap: wrap;
+  justify-items: center;
+
+  @media screen and (min-width: 768px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
 `;
 
 const ToggleProjectButton = styled.button`
