@@ -7,6 +7,10 @@ import { container } from "../styles/shared-styles";
 
 const AboutContainer = styled.section`
   ${container}
+
+  @media screen and (min-width: 768) {
+    margin-top: 1rem;
+  }
 `;
 
 const IntroHighlight = styled.span`
