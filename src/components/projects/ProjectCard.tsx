@@ -4,8 +4,8 @@ import { DiGithubBadge } from "react-icons/di";
 import { GoLinkExternal } from "react-icons/go";
 import styled from "styled-components";
 import { Project } from "../../data/projectData";
-import ProjectCardModal from "./ProjectCardModal";
 import FadeUp from "../animations/FadeUp";
+import ProjectCardModal from "./ProjectCardModal";
 
 const Card = styled.article`
   display: flex;

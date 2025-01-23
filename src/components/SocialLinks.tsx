@@ -1,8 +1,7 @@
-import styled, { css } from "styled-components";
-import { FaLinkedinIn } from "react-icons/fa6";
-import { TbBrandGithubFilled } from "react-icons/tb";
-import { FaXTwitter } from "react-icons/fa6";
+import { FaLinkedinIn, FaXTwitter } from "react-icons/fa6";
 import { IoMdMail } from "react-icons/io";
+import { TbBrandGithubFilled } from "react-icons/tb";
+import styled, { css } from "styled-components";
 
 const SocialContainer = styled.div`
   display: flex;

@@ -1,4 +1,4 @@
-import { easeIn, motion, spring } from "framer-motion";
+import { easeIn, motion } from "framer-motion";
 import { ReactNode } from "react";
 
 const defaultAnimation = {

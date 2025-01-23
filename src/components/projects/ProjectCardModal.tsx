@@ -1,9 +1,7 @@
-import styled from "styled-components";
-import { Project } from "../../data/projectData";
-import { OutlineBtn } from "../../styles/shared-styles";
 import { DiGithubBadge } from "react-icons/di";
 import { GoLinkExternal } from "react-icons/go";
-import { techSkills } from "../../data/techSkills";
+import styled from "styled-components";
+import { Project } from "../../data/projectData";
 
 const ModalOverlay = styled.div`
   position: fixed;

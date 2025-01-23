@@ -1,6 +1,6 @@
 import styled, { css } from "styled-components";
-import { greenTheme, pinkTheme, purpleTheme } from "../styles/theme.styles";
 import { useTheme } from "../hooks/useTheme";
+import { greenTheme, pinkTheme, purpleTheme } from "../styles/theme.styles";
 
 const ThemeSelect = styled.div`
   outline: 0;

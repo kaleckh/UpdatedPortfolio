@@ -1,10 +1,10 @@
 import { IoMdDownload } from "react-icons/io";
 import styled from "styled-components";
-import { outlineBtn, OutlineBtn, primaryBtn } from "../styles/shared-styles";
+import { outlineBtn, primaryBtn } from "../styles/shared-styles";
+import AnimatedGrid from "./animations/AnimatedGrid";
 import AnimatedText from "./animations/AnimatedText";
 import FadeIn from "./animations/FadeIn";
 import SocialLinks from "./SocialLinks";
-import AnimatedGrid from "./animations/AnimatedGrid";
 
 const HeroContainer = styled.div`
   position: relative;
