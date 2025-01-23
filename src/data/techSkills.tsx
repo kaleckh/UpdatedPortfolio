@@ -1,3 +1,5 @@
+// Insert the technologies you work with
+
 export const techSkills = [
   "React",
   "TypeScript",

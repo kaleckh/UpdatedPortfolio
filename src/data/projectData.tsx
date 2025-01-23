@@ -11,6 +11,8 @@ export interface Project {
   image: string;
 }
 
+// Insert your project data within the objects, all properties must be used
+// Add as many projects as needed
 export const projectData: Project[] = [
   {
     title: "Designo",
