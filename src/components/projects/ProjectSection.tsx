@@ -1,10 +1,10 @@
 import { useState } from "react";
+import { LuChevronsDown } from "react-icons/lu";
 import styled from "styled-components";
 import { projectData } from "../../data/projectData";
 import { container } from "../../styles/shared-styles";
 import SectionHeading from "../SectionHeading";
 import ProjectCard from "./ProjectCard";
-import { LuChevronsDown } from "react-icons/lu";
 
 const ProjectContainer = styled.section`
   ${container}
@@ -24,7 +24,7 @@ const ToggleProjectButton = styled.button`
   outline: 0;
   display: flex;
   align-items: center;
-  letter-spacing: 0.4rem;
+  letter-spacing: 0.1rem;
   gap: 0.7rem;
   background: 0;
   color: ${(props) => props.theme.primary};
@@ -65,22 +65,6 @@ const ProjectSection = () => {
         {isExpanded ? "Show Less" : "Show More"}
         <ExpandIcon className={isExpanded ? "rotate" : ""} />
       </ToggleProjectButton>
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
     </ProjectContainer>
   );
 };
