@@ -6,6 +6,7 @@ import SideMenu from "./components/SideMenu";
 import { useTheme } from "./hooks/useTheme";
 import GlobalStyles from "./styles/global-styles";
 import ProjectSection from "./components/projects/ProjectSection";
+import ContactSection from "./components/ContactSection";
 
 function App() {
   const { theme } = useTheme();
@@ -19,6 +20,7 @@ function App() {
         <Hero />
         <AboutSection />
         <ProjectSection />
+        <ContactSection />
       </main>
     </ThemeProvider>
   );
