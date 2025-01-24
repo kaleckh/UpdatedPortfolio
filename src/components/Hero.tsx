@@ -10,7 +10,7 @@ const HeroContainer = styled.div`
   position: relative;
   display: flex;
   align-items: center;
-  min-height: 90vh;
+  min-height: 100vh;
   padding: 0 2.4rem;
   max-width: 120rem;
   margin: 0 auto;
