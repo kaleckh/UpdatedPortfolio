@@ -17,7 +17,7 @@ const AnimatedText = ({ text }: { text: string }) => {
       initial="hidden"
       animate="hidden"
       whileInView="visible"
-      viewport={{ once: true }}
+      viewport={{ once: true, amount: 0.2 }}
       transition={{ staggerChildren: 0.09 }}
     >
       {text.split("").map((char, index) => (
