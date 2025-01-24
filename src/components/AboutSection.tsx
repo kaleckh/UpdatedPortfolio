@@ -8,7 +8,7 @@ import { container } from "../styles/shared-styles";
 const AboutContainer = styled.section`
   ${container}
 
-  @media screen and (min-width: 768) {
+  @media screen and (min-width: 768px) {
     margin-top: 1rem;
   }
 `;
