@@ -14,10 +14,6 @@ const HeroContainer = styled.div`
   padding: 0 2.4rem;
   max-width: 120rem;
   margin: 0 auto;
-
-  @media screen and (min-width: 768px) {
-    min-height: 100vh;
-  }
 `;
 
 const Overline = styled.p`
