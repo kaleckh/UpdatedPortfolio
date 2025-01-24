@@ -1,6 +1,11 @@
 import { motion } from "framer-motion";
 
-const AnimatedText = ({ text }: { text: string }) => {
+interface Props {
+  text: string;
+  animate?: string;
+}
+
+const AnimatedText = ({ text, animate = "hidden" }: Props) => {
   const defaultAnimations = {
     hidden: {
       opacity: 0,
@@ -15,7 +20,7 @@ const AnimatedText = ({ text }: { text: string }) => {
   return (
     <motion.span
       initial="hidden"
-      animate="hidden"
+      animate={animate}
       whileInView="visible"
       viewport={{ once: true, amount: 0.2 }}
       transition={{ staggerChildren: 0.09 }}

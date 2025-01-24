@@ -84,7 +84,7 @@ const Hero = () => {
         </FadeIn>
         {/* Your Name  */}
         <h1>
-          <AnimatedText text="John Smith" />
+          <AnimatedText animate="visible" text="John Smith" />
         </h1>
         <FadeIn delay={0.8}>
           {/* Your description - main tech skills/current focus or pursuit*/}
