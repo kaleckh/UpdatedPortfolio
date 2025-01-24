@@ -90,10 +90,10 @@ const Hero = () => {
           {/* Your Title  */}
           <Overline>Full-Stack Developer</Overline>
         </FadeIn>
-        <AuthorHeading>
-          {/* Your Name  */}
+        {/* Your Name  */}
+        <h1>
           <AnimatedText text="John Smith" />
-        </AuthorHeading>
+        </h1>
         <FadeIn delay={0.8}>
           {/* Your description - main tech skills/current focus or pursuit*/}
           {/* Wrap any tech/skills with the 'Highlight' component  */}
