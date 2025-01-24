@@ -12,7 +12,11 @@ const ContactContainer = styled.section`
 `;
 
 const ContactHeading = styled.h2`
-  font-size: 8rem;
+  font-size: 5rem;
+
+  @media screen and (min-width: 768px) {
+    font-size: 8rem;
+  }
 `;
 
 const ContactBadge = styled.span`
