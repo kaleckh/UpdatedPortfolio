@@ -2,7 +2,7 @@
 import AlienCafe from "../images/AlienCafe.png";
 import SocialMobile from "../images/SocialMobile.png";
 import CopiersUtah from "../images/copiers.webp";
-import designoProject from "../images/designo.png";
+import Messaging from "../images/messaging.png";
 import Jukify from "../images/jukify.png";
 
 export interface Project {
@@ -60,6 +60,6 @@ export const projectData: Project[] = [
     techUsed: ["TypeScript", "TypeScript", "CSS", "Sockets.io"],
     githubPath: "https://github.com",
     liveSitePath: "https://www.linkedin.com/feed/update/urn:li:activity:7221575398046777344/",
-    image: designoProject,
+    image: Messaging,
   },
 ];
