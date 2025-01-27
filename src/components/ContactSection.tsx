@@ -79,7 +79,7 @@ const ContactSection = () => {
         {/* Insert you email here  */}
         <EmailBadge href="mailto:youremail@email.com">
           <IoMdMail />
-          johnsmith@gmail.com
+          kaleckh@gmail.com
         </EmailBadge>
       </ContactContainer>
     </FadeUp>
