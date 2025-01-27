@@ -84,21 +84,20 @@ const Hero = () => {
         </FadeIn>
         {/* Your Name  */}
         <h1>
-          <AnimatedText animate="visible" text="John Smith" />
+          <AnimatedText animate="visible" text="Kaleck Hamm" />
         </h1>
         <FadeIn delay={0.8}>
           {/* Your description - main tech skills/current focus or pursuit*/}
           {/* Wrap any tech/skills with the 'Highlight' component  */}
           <HeroSummary>
-            With 3 years of experience, I specialize in
+            With 2+ years of experience, I specialize in
             <Highlight> React</Highlight>, <Highlight>TypeScript</Highlight>,
             and <Highlight>Node.js</Highlight>. With a strong focus on
             Object-Oriented-Programming (OOP).
           </HeroSummary>
           <HeroButtonWrapper>
-            <CTAButtonWrapper href="#projects">View my work</CTAButtonWrapper>
-            {/* Optional Resume Button - For use, embed resume in 'Public folder' and change href and download attributes to your own file */}
-            <ResumeBtn href="/demo_resume.pdf" download="demo_resume.pdf">
+            <CTAButtonWrapper href="#projects">View my work</CTAButtonWrapper>            
+            <ResumeBtn href="/Kaleck_Hamm_SoftwareEngineer_Resume.pdf" download="Kaleck_Hamm_SoftwareEngineer_Resume.pdf">
               <IoMdDownload size={20} />
               Resume
             </ResumeBtn>
